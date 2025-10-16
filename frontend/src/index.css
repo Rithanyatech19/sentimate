@@ -2,15 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
 
-/* Convert #d6b0eb to HSL: hsl(270, 40%, 81%) */
 @layer base {
   :root {
     /* Light Theme - Clean Medical Grade */
-    --background: 270 50% 94%;
+    --background: 270 40% 92%;
     --foreground: 220 9% 12%;
 
     --card: 0 0% 100%;
@@ -124,7 +126,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground transition-colors duration-300;
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background-color: hsl(var(--background));
   }
 
